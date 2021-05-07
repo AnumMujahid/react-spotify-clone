@@ -29,7 +29,6 @@ function App() {
   }, []);
   return (
     <div className="app">
-      {console.log(token)}
       {!token && <Login />}
       {token && <Player spotify={spotify} />}
     </div>
