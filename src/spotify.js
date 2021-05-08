@@ -1,7 +1,7 @@
 import { clientId } from './config.js';
 
 export const authEndpoint = 'https://accounts.spotify.com/authorize';
-const redirectURL = 'http://localhost:3000/';
+const redirectURL = 'https://spotify-clone-by-anum.web.app/'; //enter your redirect uri
 const client = clientId; //enter your client id here
 
 const scopes = [

@@ -5,7 +5,13 @@ import Avatar from '@material-ui/core/Avatar';
 import { useStateValue } from './StateProvider';
 
 const Header = () => {
-  const [{ user }] = useStateValue();
+  const [{ user }, dispatch] = useStateValue();
+  const logout = () => {
+    dispatch({
+      type: 'SET_TOKEN',
+      token: null,
+    });
+  };
   return (
     <div className="header">
       <div className="header__left">
@@ -15,7 +21,7 @@ const Header = () => {
           placeholder="Search for Artists, Songs or Podcasts"
         />
       </div>
-      <div className="header__right">
+      <div className="header__right" onClick={logout}>
         <Avatar src={user?.images[0]?.url} alt={user?.display_name} />
         <h4>{user?.display_name}</h4>
       </div>
