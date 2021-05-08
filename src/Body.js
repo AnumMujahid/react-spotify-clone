@@ -8,8 +8,7 @@ import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
 import SongRow from './SongRow';
 
 const Body = ({ spotify, playlist }) => {
-  const [{ token, discover_weekly }, dispatch] = useStateValue();
-  console.log(token);
+  const [{ discover_weekly }, dispatch] = useStateValue();
   const playPlaylist = (id) => {
     spotify
       .play({
