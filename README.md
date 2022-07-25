@@ -1,6 +1,6 @@
 ## Spotify Clone
 
-It is a spotify clone project built using react. React hooks useEffect and useState are used in the project. To check the deployed version [visit](https://spotify-clone-by-anum.web.app/)
+It is a spotify clone project built using react. The playlists of the logged in user and the songs of selected playlist are also displayed. React hooks useEffect and useState are used in the project. To check the deployed version [visit](https://spotify-clone-by-anum.web.app/)
 
 ## How to Use
 
